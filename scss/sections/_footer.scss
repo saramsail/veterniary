@@ -1,0 +1,68 @@
+@use '../custom' as *;
+
+.footer{
+    background-color: $black;
+    .container{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    &--about{
+        h3{
+            color: $white;
+            font-size: 2.5rem;
+        }
+        a{
+            display: block;
+            color: $white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding-bottom: 0.8rem;
+            text-transform: capitalize;
+            &:hover{
+                color: $secondary;
+            }
+        }
+    }
+    &--title{
+        h3{
+            color: $white;
+            font-size: 2.5rem; 
+        }
+        p{
+            color: $white;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        .forms{
+            background-color: $primary;
+            border: none;
+            border-radius: none;
+            font-size: 1.2rem;
+            color: $white;
+            height: 5rem;
+            &::placeholder {
+                color: $white;  
+                opacity: 0.8; 
+                font-size: 4rem;
+            }            
+        }
+    }
+    &--icon{
+        padding-top: 5rem;
+        button{
+            background-color: $white;
+            border: none;
+            &:hover{
+                background-color: $secondary !important;
+            }
+            i{
+                font-size: 1rem;
+                color: $black;
+                border-radius: 50%;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

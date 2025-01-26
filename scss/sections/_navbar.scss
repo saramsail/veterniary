@@ -1,0 +1,92 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu {
+    background-color: rgba(172, 141, 7, 0.664); // White background with 50% opacity
+    opacity: 95%;
+    border-bottom: 2rem;
+    padding: 1rem 1rem;
+    img {
+        width: 15rem;
+    }
+    ul {
+        padding-right: 2rem;
+        li {
+            padding-right: 1rem;
+            a {
+                color: $white;
+                font-family: "Roboto" sans-serif;
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: 1.7rem;
+                &:hover {
+                    color: $secondary ;
+                }
+                &:focus{
+                    color: $secondary;
+                }
+            }
+        }
+    }
+    .form {
+        background-color: $primary;
+        border: none;
+        border-radius: none;
+        font-size: 1.2rem;
+        color: $white;
+        &::placeholder {
+            color: $white;  
+            opacity: 0.8; 
+        }
+    }
+}
+
+
+
+// .search-container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background-color: #f3c623; // Matches the yellow shade
+//     border-radius: 5px;
+//     overflow: hidden;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//     width: 250px;
+//     height: 40px;
+  
+//     .search-input {
+//       flex: 1;
+//       border: none;
+//       outline: none;
+//       padding: 0 10px;
+//       font-size: 14px;
+//       color: #555;
+//       background-color: transparent;
+  
+//       &::placeholder {
+//         color: #bbb;
+//       }
+//     }
+  
+//     .search-button {
+//       background-color: #12cfd0; // Matches the teal shade
+//       border: none;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       padding: 0 10px;
+//       cursor: pointer;
+//       outline: none;
+//       transition: background-color 0.3s;
+  
+//       i {
+//         color: #fff;
+//         font-size: 16px;
+//       }
+  
+//       &:hover {
+//         background-color: #0aa3a6;
+//       }
+//     }
+//   }
+  

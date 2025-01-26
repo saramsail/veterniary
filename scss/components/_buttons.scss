@@ -1,0 +1,113 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+
+.btn-rounded {
+    position: relative;
+    font-weight: 700;
+    background: $white;
+    span {
+        background: $secondary;
+        width: 4rem;
+        height: 2.6rem;
+        position: absolute;
+        top: 50%;
+        right: -2px;
+        transform: translateY(-50%);
+        i {
+            color: $white;
+            line-height: 2.6rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.btns-rounded {
+    position: relative;
+    font-weight: 700;
+    background: $white;
+    span {
+        background: $secondary;
+        width: 7rem;
+        height: 5rem;
+        position: absolute;
+        top: 50%;
+        right: -2px;
+        transform: translateY(-50%);
+        i {
+            color: $white;
+            line-height: 2.6rem;
+            font-size: 2.8rem;
+            padding-top: 1rem;
+            &:hover{
+                color: $primary;
+            }
+
+        }
+
+    }
+    &:hover{
+        color: #076e74;
+    }
+}
+
+.btns{
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    .btn-secondary{
+        padding: 0.7rem  2.5rem;
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        &:hover{
+            color: $white;
+        }
+    }
+
+    .btn-primary{
+        padding: 0.7rem  2.5rem;
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        &:hover{
+            color: $white;
+        }
+    }
+    
+    .btn-outline-secondary{
+        padding: 0.7rem  2.5rem;
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 500;
+        border: 0.1rem solid rgba($white, 0.6);
+        margin-bottom: 1rem;
+        &:hover{
+            color: $white !important;
+        }
+    
+    }
+}
+// .btn-secondary{
+//     padding: 0.7rem  2.5rem;
+//     color: $white;
+//     font-size: 1.5rem;
+//     font-weight: 500;
+//     &:hover{
+//         color: $white;
+//     }
+// }
+
+// .btn-outline-secondary{
+//     padding: 0.7rem  2.5rem;
+//     color: $white;
+//     font-size: 1.5rem;
+//     font-weight: 500;
+//     border: 0.1rem solid rgba($white, 0.6);
+//     &:hover{
+//         color: $black;
+//     }
+
+// }

@@ -1,0 +1,41 @@
+@use '../custom' as *;
+
+
+
+
+.card{
+    background-color: $white;
+    margin-bottom: 5rem;
+    border: none;
+    &--date{
+        color: $secondary;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &--footer{
+        color: $secondary;
+        padding-left: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-bottom: 1.5rem;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.card-title{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.card-text{
+    font-size: 1.2rem;
+    font-weight: 500;
+}

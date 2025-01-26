@@ -1,0 +1,153 @@
+@use '../custom' as *;
+
+
+
+.video-animations{
+    background-color: $white;
+    width: 100%;
+    height: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.portfolio-box {
+    position: relative; /* Parent ko relative rakhein */
+    width: 100%;
+    margin-bottom: 1.2rem;
+    z-index: 2; /* Parent container ko top level par laye */
+  
+    img {
+      width: 100%;
+      position: relative;
+      z-index: 2; /* Image aur uske saath elements ko top layer par le aaye */
+    }
+  
+    .portfolio-info {
+      background-color: rgba($primary, 0.75);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      visibility: visible;
+      z-index: 3; /* Overlay ko image aur box ke upar le aaye */
+    }
+  
+    .box {
+      position: absolute;
+      background-color: $primary;
+      bottom: -1.5rem; /* Box ko neeche shift karein */
+      left: -1.5rem; /* Horizontally center karein */
+      width: 40%;
+      height: 40%;
+      z-index: 1; /* Box ko sabse neeche rakhein */
+    }
+  
+    a {
+      z-index: 4; /* Play button ya icons ko sabse upar rakhein */
+    }
+  }
+  
+
+
+
+
+.border-animation{
+    position:absolute;
+    top: 0;
+    left: 0;
+    border: 0.55rem solid $white;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    animation: sial-border 1.5s linear infinite;
+    
+    &--border-1 {
+        animation-delay: 1.5s;
+    }
+    &--border-2 {
+        animation-delay: 1.2s;
+    }
+
+}
+
+// .portfolio-box{
+//     position: relative;
+//     img {
+//         width: 100%;
+//         //height: 100%;
+//         background-color: $primary;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+
+
+
+
+
+
+
+// .parent-container{
+//   position: relative;
+//   .box {
+//     position: absolute;
+//     background-color: $primary;
+//     bottom: -1.5rem; /* Box ko neeche shift karein */
+//     left: -2rem; /* Horizontally center karein */
+//     width: 17%;
+//     height: 40%;
+//     z-index: 1; /* Box ko sabse neeche rakhein */
+//   }
+//   .boxs {
+//     position: absolute;
+//     background-color: $primary;
+//     bottom: -1.5rem; /* Box ko neeche shift karein */
+//     left: -2rem; /* Horizontally center karein */
+//     width: 17%;
+//     height: 40%;
+//     z-index: 1; /* Box ko sabse neeche rakhein */
+//   }
+// .portfolio-box {
+//     position: relative; /* Parent ko relative rakhein */
+//     width: 100%;
+//     margin-bottom: 1.2rem;
+//     z-index: 2; /* Parent container ko top level par laye */
+//     overflow: hidden;
+//     .images { 
+//       width: 100%;
+//       position: relative;
+//       z-index: 2; /* Image aur uske saath elements ko top layer par le aaye */
+     
+//     }
+
+//     .portfolio-info {
+//       background-color: rgba($primary, 0.75);
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       opacity: 1;
+//       visibility: visible;
+//       z-index: 3; /* Overlay ko image aur box ke upar le aaye */
+
+//     }
+  
+
+  
+//     a {
+//       z-index: 4; /* Play button ya icons ko sabse upar rakhein */
+//     }
+//     &:hover{
+//       .images{
+//         transform: scale(1.5);
+//         @include transitionProperty;
+//       }
+//     }
+// }
+// }

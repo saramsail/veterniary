@@ -1,0 +1,19 @@
+@use '../custom' as *;
+
+.team{
+    background-color: $white;
+    padding-bottom: 5rem;
+    &--icon{
+        padding-bottom: 3rem;
+        button{
+            
+            i{
+                color: $white;
+                border-radius: 50%;
+                &:hover{
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
